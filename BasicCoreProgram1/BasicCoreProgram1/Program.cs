@@ -10,7 +10,8 @@ namespace BasicCoreProgram1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two \n4.Harmonic Value\n5.Prime Factor\n6.Division\n ");
+
+            Console.WriteLine("Please choose anyone below\n1.FlipCoin \n2.LeapYear \n3.Power of Two \n4.Harmonic Value\n5.Prime Factor\n6.Division\n7.Swap Numbers\n8.Even or Odd\n ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,8 +43,11 @@ namespace BasicCoreProgram1
                     SwapNumbers swap = new SwapNumbers();
                     swap.Swap(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
                     break;
+                case 8:
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+                    evenOrOdd.EvenOdd(Convert.ToInt32(Console.ReadLine()));
+                    break;
             }
-
         }
     }
 }
